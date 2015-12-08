@@ -1,0 +1,45 @@
+
+/* Class = "IBUIBarButtonItem"; title = "Cancelar"; ObjectID = "17w-9d-faj"; */
+"17w-9d-faj.title" = "Cancelar";
+
+/* Class = "IBUILabel"; text = "Conta"; ObjectID = "1Hf-yE-MRg"; */
+"1Hf-yE-MRg.text" = "Conta";
+
+/* Class = "IBUILabel"; text = "Conta"; ObjectID = "BVt-F8-cMZ"; */
+"BVt-F8-cMZ.text" = "Conta";
+
+/* Class = "IBUIButton"; normalTitle = "SALVAR CONTA"; ObjectID = "CvV-LR-Nu0"; */
+"CvV-LR-Nu0.normalTitle" = "SALVAR CONTA";
+
+/* Class = "IBUITextField"; placeholder = "Nova Conta"; ObjectID = "Qbw-vA-Lk2"; */
+"Qbw-vA-Lk2.placeholder" = "Nova Conta";
+
+/* Class = "IBUILabel"; text = "Data"; ObjectID = "SQd-hX-SRw"; */
+"SQd-hX-SRw.text" = "Data";
+
+/* Class = "IBUILabel"; text = "Lembre-me"; ObjectID = "VGV-HX-QDv"; */
+"VGV-HX-QDv.text" = "Lembre-me";
+
+/* Class = "IBUINavigationItem"; title = "Contas"; ObjectID = "X5f-nC-4uh"; */
+"X5f-nC-4uh.title" = "Contas";
+
+/* Class = "IBUIButton"; normalTitle = "EXCLUIR CONTA"; ObjectID = "ane-9h-wvA"; */
+"ane-9h-wvA.normalTitle" = "EXCLUIR CONTA";
+
+/* Class = "IBUINavigationItem"; title = "Nova Conta"; ObjectID = "eaD-Wd-zkE"; */
+"eaD-Wd-zkE.title" = "Nova Conta";
+
+/* Class = "IBUIButton"; normalTitle = "Teste de Linguá"; ObjectID = "gov-oh-5bo"; */
+"gov-oh-5bo.normalTitle" = "Teste de Linguá";
+
+/* Class = "IBUILabel"; text = "Dia de Vencimento"; ObjectID = "qIj-h7-dlT"; */
+"qIj-h7-dlT.text" = "Dia de Vencimento";
+
+/* Class = "IBUILabel"; text = "Lembre-me"; ObjectID = "r62-Hf-njy"; */
+"r62-Hf-njy.text" = "Lembre-me";
+
+/* Class = "IBUILabel"; text = "Selecione"; ObjectID = "t67-tu-xiI"; */
+"t67-tu-xiI.text" = "Selecione";
+
+/* Class = "IBUINavigationItem"; title = "Contas Mensais"; ObjectID = "z4o-nS-d54"; */
+"z4o-nS-d54.title" = "Contas Mensais";

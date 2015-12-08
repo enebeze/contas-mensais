@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="5041" systemVersion="13B42" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Contas" representedClassName="Contas" syncable="YES">
+        <attribute name="conta" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="dataCadastro" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="dataFim" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="diaVencimento" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="lembreme" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="status" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <relationship name="pagamento" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Pagamentos" inverseName="conta" inverseEntity="Pagamentos" syncable="YES"/>
+    </entity>
+    <entity name="Pagamentos" representedClassName="Pagamentos" syncable="YES">
+        <attribute name="referencia" optional="YES" attributeType="Date" syncable="YES"/>
+        <relationship name="conta" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Contas" inverseName="pagamento" inverseEntity="Contas" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Contas" positionX="-6248" positionY="-2079" width="128" height="148"/>
+        <element name="Pagamentos" positionX="-6257" positionY="-1854" width="128" height="73"/>
+    </elements>
+</model>
