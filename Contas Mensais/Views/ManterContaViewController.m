@@ -11,9 +11,12 @@
 #import "ContasViewController.h"
 #import "AppDelegate.h"
 #import "Contas.h"
-#import "Util/Util.h"
+#import "Util.h"
+#import "GAIFields.h"
+#import "GAIDictionaryBuilder.h"
 
 @interface ManterContaViewController ()
+
 
 @end
 
@@ -30,11 +33,12 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    
+}
+
+-(void) setAnalyticsGoogle
+{
     id tracker = [[GAI sharedInstance] defaultTracker];
-    
     [tracker set:kGAIScreenName value: @"Manter Screen"];
-    
     [tracker send:[[GAIDictionaryBuilder createAppView] build]];
 }
 
@@ -42,6 +46,8 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    width = [UIScreen mainScreen].bounds.size.width;
     
     UITapGestureRecognizer *tgr = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
     [tgr setCancelsTouchesInView:NO];
@@ -66,6 +72,9 @@
     //[_lembreMeList objectForKey:[NSString stringWithFormat:@"%ld", (long)row]];
     NSString *text = [_lembreMeList objectForKey:[NSString stringWithFormat:@"%ld", (long)_linhaLembre]];
     _lblLembreme.text = NSLocalizedString(text, @"Lembretes em Dias");
+    
+    // Informa dados para google analytics
+    [self setAnalyticsGoogle];
     
 }
 
@@ -140,8 +149,9 @@
 
 -(void)displayViewLembreme
 {
-    CGRect toolbarTargetFrame = CGRectMake(0, self.view.bounds.size.height-266-44, 320, 44);
-    CGRect pickerTargetFrame = CGRectMake(0, self.view.bounds.size.height-266, 320, 216);
+    
+    CGRect toolbarTargetFrame = CGRectMake(0, self.view.bounds.size.height-266-44, width, 44);
+    CGRect pickerTargetFrame = CGRectMake(0, self.view.bounds.size.height-266, width, 216);
     
     UIView *darkView = [[UIView alloc] initWithFrame:self.view.bounds];
     darkView.alpha = 0;
@@ -154,7 +164,7 @@
     
     [self.view addSubview:darkView];
     
-    UIPickerView *picker = [[UIPickerView alloc] initWithFrame:CGRectMake(0, self.view.bounds.size.height+44, 320, 216)];
+    UIPickerView *picker = [[UIPickerView alloc] initWithFrame:CGRectMake(0, self.view.bounds.size.height+44, width, 216)];
     picker.tag = 21;
     picker.backgroundColor = [UIColor whiteColor];
     picker.alpha = 1;
@@ -164,7 +174,7 @@
     //[picker selectRow:[[NSUserDefaults standardUserDefaults]integerForKey:_lblLembreme.text] inComponent:0 animated:YES];
     [self.view addSubview:picker];
     
-    UIToolbar *toolBar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, self.view.bounds.size.height, 320, 44)];
+    UIToolbar *toolBar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, self.view.bounds.size.height, width, 44)];
     toolBar.tag = 22;
     [toolBar setBarTintColor:[UIColor colorWithRed:0/255.0f green:150/255.0f blue:200/255.0f alpha:1.0f]];
     UIBarButtonItem *spacer = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFlexibleSpace target:nil action:nil];
@@ -220,8 +230,9 @@
 
 -(void)displayViewDataFinal
 {
-    CGRect toolbarTargetFrame = CGRectMake(0, self.view.bounds.size.height-266-44, 320, 44);
-    CGRect datePickerTargetFrame = CGRectMake(0, self.view.bounds.size.height-266, 320, 216);
+
+    CGRect toolbarTargetFrame = CGRectMake(0, self.view.bounds.size.height-266-44, width, 44);
+    CGRect datePickerTargetFrame = CGRectMake(0, self.view.bounds.size.height-266, width, 216);
     //CGRect movBtnTeste = CGRectMake(30, 200, 250, 44);
     
    /* UIButton *btnTeste = [[UIButton alloc] initWithFrame:CGRectMake(40, -44, 250, 44)];
@@ -243,7 +254,7 @@
     
     [self.view addSubview:darkView];
     
-    UIDatePicker *datePicker = [[UIDatePicker alloc] initWithFrame:CGRectMake(0, self.view.bounds.size.height+44, 320, 216)];
+    UIDatePicker *datePicker = [[UIDatePicker alloc] initWithFrame:CGRectMake(0, self.view.bounds.size.height+44, width, 216)];
     datePicker.tag = 10;
     datePicker.datePickerMode = UIDatePickerModeDateAndTime;
     datePicker.backgroundColor = [UIColor whiteColor];
@@ -257,7 +268,7 @@
     [datePicker addTarget:self action:@selector(changeDate:) forControlEvents:UIControlEventValueChanged];
     [self.view addSubview:datePicker];
     
-    UIToolbar *toolBar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, self.view.bounds.size.height, 320, 44)];
+    UIToolbar *toolBar = [[UIToolbar alloc] initWithFrame:CGRectMake(0, self.view.bounds.size.height, width, 44)];
     toolBar.tag = 11;
     //toolBar.barStyle = UIBarStyleBlackTranslucent;
     [toolBar setBarTintColor:[UIColor colorWithRed:0/255.0f green:150/255.0f blue:200/255.0f alpha:1.0f]];
@@ -307,8 +318,8 @@
 
 - (void)removePicker
 {
-    CGRect toolbarTargetFrame = CGRectMake(0, self.view.bounds.size.height, 320, 44);
-    CGRect datePickerTargetFrame = CGRectMake(0, self.view.bounds.size.height+44, 320, 216);
+    CGRect toolbarTargetFrame = CGRectMake(0, self.view.bounds.size.height, width, 44);
+    CGRect datePickerTargetFrame = CGRectMake(0, self.view.bounds.size.height+44, width, 216);
     [UIView beginAnimations:@"MoveOut" context:nil];
     [self.view viewWithTag:20].alpha = 0;
     [self.view viewWithTag:21].frame = datePickerTargetFrame;
@@ -322,8 +333,8 @@
 
 -(void)removeDataPicker
 {
-    CGRect toolbarTargetFrame = CGRectMake(0, self.view.bounds.size.height, 320, 44);
-    CGRect datePickerTargetFrame = CGRectMake(0, self.view.bounds.size.height+44, 320, 216);
+    CGRect toolbarTargetFrame = CGRectMake(0, self.view.bounds.size.height, width, 44);
+    CGRect datePickerTargetFrame = CGRectMake(0, self.view.bounds.size.height+44, width, 216);
     [UIView beginAnimations:@"MoveOut" context:nil];
     [self.view viewWithTag:9].alpha = 0;
     [self.view viewWithTag:10].frame = datePickerTargetFrame;
@@ -557,8 +568,9 @@
     localNotification.alertBody = [NSString stringWithFormat:NSLocalizedString(@"Conta %@ está perto do seu vencimento", @"Texto da Notificação"), _lblConta.text];
     localNotification.timeZone = [NSTimeZone defaultTimeZone]; //[NSTimeZone timeZoneWithName:@"UTC"];
     localNotification.applicationIconBadgeNumber = [[UIApplication sharedApplication] applicationIconBadgeNumber] + 1;
-    localNotification.repeatInterval = NSMonthCalendarUnit;
+    localNotification.repeatInterval = NSCalendarUnitMonth;
     localNotification.soundName = UILocalNotificationDefaultSoundName;
+    localNotification.category = @"notificationCategory";
     
     // Cria informação da conta
     NSDictionary *dictionary = [NSDictionary dictionaryWithObject:_lblConta.text forKey:@"Conta"];
@@ -587,7 +599,7 @@
 
 -(NSDate*)getFireDateWithDate
 {
-    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     
     NSDateComponents *dataAtual = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear | NSCalendarUnitHour | NSCalendarUnitMinute fromDate:_contas.diaVencimento];
     
@@ -657,7 +669,7 @@
     {
         // Sempre cancela a notificação
         [self cancelLocalNotification:nomeConta];
-        // Reload a table view da View Igrejas
+        // Recarrega a tableview na tela inicial
         [self.delegate carregaContas];
         // Volta pra view anterior
         [self dismissViewControllerAnimated:YES completion:Nil];

@@ -29,9 +29,6 @@
 /* Class = "IBUINavigationItem"; title = "Nova Conta"; ObjectID = "eaD-Wd-zkE"; */
 "eaD-Wd-zkE.title" = "Nova Conta";
 
-/* Class = "IBUIButton"; normalTitle = "Teste de Linguá"; ObjectID = "gov-oh-5bo"; */
-"gov-oh-5bo.normalTitle" = "Teste de Linguá";
-
 /* Class = "IBUILabel"; text = "Dia de Vencimento"; ObjectID = "qIj-h7-dlT"; */
 "qIj-h7-dlT.text" = "Dia de Vencimento";
 

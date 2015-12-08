@@ -11,7 +11,7 @@
 #import "AppDelegate.h"
 #import "CellConta.h"
 #import "Pagamentos.h"
-#import "Util/Util.h"
+#import "Util.h"
 
 @interface ContasViewController () <ManterContaViewControllerDelegate, CellContaDelegate>
 
@@ -21,18 +21,26 @@
 
 @implementation ContasViewController
 
-@synthesize adBanner = adBanner_;
-
-/*
-- (id)initWithStyle:(UITableViewStyle)style
+-(void)notificationActions
 {
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
-    }
-    return self;
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(pagarContaWithNotification:) name:@"pagarContaWithNotification" object:nil];
 }
-*/
+
+-(void)pagarContaWithNotification:(NSNotification*)notification
+{
+    NSDictionary *dict = [notification userInfo];
+    UILocalNotification *not = (UILocalNotification*) [dict objectForKey:@"not"];
+    
+    // Percorre as contas
+    for (Contas *conta in _contas) {
+        if ([conta.conta isEqualToString:[not.userInfo objectForKey:@"Conta"]])
+        {
+            [self pagarConta:conta];
+            [UIApplication sharedApplication].applicationIconBadgeNumber = 0;
+        }
+    }
+}
+
 
 - (void)viewDidAppear:(BOOL)animated
 {
@@ -45,12 +53,6 @@
     
     [self.view setBackgroundColor:[UIColor groupTableViewBackgroundColor]];
     
-    id tracker = [[GAI sharedInstance] defaultTracker];
-    
-    [tracker set:kGAIScreenName value: @"Home Screen"];
-    
-    [tracker send:[[GAIDictionaryBuilder createAppView] build]];
-
 }
 
 - (void)viewDidLoad
@@ -62,38 +64,42 @@
     //UIColor* color = [UIColor colorWithRed:65.0/255 green:75.0/255 blue:89.0/255 alpha:1.0];
     //[self.view setBackgroundColor:color];
     
-    //UITapGestureRecognizer *tgr = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissCellEdit:)];
-    //[tgr setCancelsTouchesInView:NO];
-    //[self.tableView addGestureRecognizer:tgr];
+    UITapGestureRecognizer *tgr = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissCellEdit:)];
+    [tgr setCancelsTouchesInView:NO];
+    [self.tableView addGestureRecognizer:tgr];
     
-     CGRect aRect = CGRectMake(0, self.view.frame.size.height - 50, 320, 50);
-     self.adBanner = [[GADBannerView alloc] initWithFrame:aRect];
+    // Adiciona as ações para as notificações
+    [self notificationActions];
+    
+    [self.bannerView setAdSize:kGADAdSizeSmartBannerPortrait];
+    
+    // Especificar o ID do bloco de anúncios.
+    self.bannerView.adUnitID = @"ca-app-pub-9012198329041855/2806182324";
      
-     // Especificar o ID do bloco de anúncios.
-     self.adBanner.adUnitID = @"ca-app-pub-9012198329041855/2806182324";
-     
-     // Permitir que o tempo de execução saiba qual UIViewController deve ser restaurado depois de levar
-     // o usuário para onde quer que o anúncio vá e adicioná-lo à hierarquia de visualização.
-     [self.adBanner setRootViewController: self];
-     
-     [self.view addSubview:self.adBanner];
-     
-     // Iniciar uma solicitação genérica para carregá-la com um anúncio.
-     [self.adBanner loadRequest:[self createRequest]];
-
+    // Permitir que o tempo de execução saiba qual UIViewController deve ser restaurado depois de levar
+    // o usuário para onde quer que o anúncio vá e adicioná-lo à hierarquia de visualização.
+    self.bannerView.rootViewController = self;
+    
+    // Iniciar uma solicitação genérica para carregá-la com um anúncio.
+    [self.bannerView loadRequest:[self createRequest]];
+    
+    self.screenName = @"Home Screen";
+    
 }
+
 
 - (GADRequest *)createRequest {
     GADRequest *request = [GADRequest request];
     
-#ifdef DEBUG
-    request.testDevices = [NSArray arrayWithObjects:GAD_SIMULATOR_ID,@"f644ec8e26248013b790ebae912d9035", nil];
-#endif
+//#ifdef DEBUG
+    request.testDevices = @[@"85092075a4fd48579c260d3d52e16385"];
+//#endif
     
     return request;
 }
+ 
 
--(void)dismissCellEdit
+-(void)dismissCellEdit:(id)sender
 {
     if (indexPathInEdit != nil) {
         CellConta * cellConta = (CellConta *)[self.tableView cellForRowAtIndexPath:indexPathInEdit];
@@ -201,7 +207,7 @@
 
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    [self dismissCellEdit];
+    [self dismissCellEdit:nil];
     
     // Recebe a conta
     Contas *conta = (Contas*)[_contas objectAtIndex:indexPath.row];
@@ -226,7 +232,7 @@
 {
     if ([segue.identifier isEqualToString:@"novaConta"]) {
 
-        [self dismissCellEdit];
+        [self dismissCellEdit:nil];
         
         UINavigationController *navController = segue.destinationViewController;
         ManterContaViewController *novaConta = (ManterContaViewController*)navController.visibleViewController;
@@ -312,7 +318,7 @@
         [Util AlertWithMsg:[error localizedDescription] title:NSLocalizedString(@"Erro", @"Erro")];
     }
     
-    [self dismissCellEdit];
+    [self dismissCellEdit:nil];
     
     // Recarrega as tableview
     [self carregaContas];
@@ -373,7 +379,7 @@
 
 -(void)actionSheet:(UIActionSheet *)actionSheet clickedButtonAtIndex:(NSInteger)buttonIndex
 {
-    [self dismissCellEdit];
+    [self dismissCellEdit:nil];
     
     if (buttonIndex == 0) {
         [self excluiConta];
@@ -464,7 +470,7 @@
             // Cancela a notificação antiga
             [[UIApplication sharedApplication] cancelLocalNotification:not];
             
-            NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+            NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
             
             // Recebe a data
             NSDateComponents *dataAtual = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear | NSCalendarUnitHour | NSCalendarUnitMinute fromDate:conta.diaVencimento];

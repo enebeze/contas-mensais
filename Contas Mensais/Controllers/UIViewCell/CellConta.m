@@ -66,12 +66,11 @@
     if (chk == nil) {
         
         // Cria e adiciona o check box
-        chk = [[UICheckboxButton alloc] initWithFrame:CGRectMake(270, 23, 70, 29)];
+        chk = [[UICheckboxButton alloc] initWithFrame:CGRectMake([UIScreen mainScreen].bounds.size.width - 55, 23, 70, 29)];
         chk.tag = 100;
         chk.delegate = self;
         [viewContent addSubview:chk];
     }
-    
     
     //[chk setChecked:[conta.status isEqualToNumber:[NSNumber numberWithInt:1]]];
     [chk setChecked:[self verificaSeFoiPaga]];
@@ -82,7 +81,7 @@
 
 -(NSDate*)getDataExibicao
 {
-    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSGregorianCalendar];
+    NSCalendar *calendar = [[NSCalendar alloc] initWithCalendarIdentifier:NSCalendarIdentifierGregorian];
     
     NSDateComponents *vencimentoConta = [[NSCalendar currentCalendar] components:NSCalendarUnitDay | NSCalendarUnitMonth | NSCalendarUnitYear | NSCalendarUnitHour | NSCalendarUnitMinute fromDate:contaCell.diaVencimento];
     

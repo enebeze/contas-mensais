@@ -7,10 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "GAI.h"
-#import "GAIFields.h"
-#import "GAIDictionaryBuilder.h"
 #import "Contas.h"
+#import "GAI.h"
 
 @protocol ManterContaViewControllerDelegate <NSObject>
 
@@ -19,7 +17,9 @@
 
 @end
 
-@interface ManterContaViewController : UITableViewController<UIPickerViewDataSource, UIPickerViewDelegate, UIActionSheetDelegate>
+@interface ManterContaViewController : UITableViewController<UIPickerViewDataSource, UIPickerViewDelegate, UIActionSheetDelegate> {
+    NSInteger width;
+}
 
 - (IBAction)cancelar:(id)sender;
 - (void)selecionaConta:(NSString*)conta;
@@ -37,5 +37,6 @@
 @property (strong, nonatomic) NSArray *tiposLembretes;
 @property (strong, nonatomic) NSDictionary *lembreMeList;
 @property (assign, nonatomic) NSInteger linhaLembre;
+
 
 @end

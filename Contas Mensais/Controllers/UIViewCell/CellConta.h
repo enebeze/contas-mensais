@@ -31,6 +31,7 @@
     IBOutlet UILabel *lblConta;
     IBOutlet UILabel *lblDiaVencimento;
     IBOutlet UILabel *lblLembreme;
+    //IBOutlet UICheckboxButton *chk;
     
     UICheckboxButton *chk;
     Contas *contaCell;

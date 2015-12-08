@@ -5,3 +5,132 @@
   Created by Ebenezer Silva on 11/03/15.
   Copyright (c) 2015 Ebenezer Silva. All rights reserved.
 */
+
+
+/* Valida Dia Vencimento */
+"- Informe o Dia de Vencimento" = "- Enter the Due Day";
+
+/* Valida Conta */
+"- Informe o nome da Conta \n" = "- Enter the Bill name \n";
+
+/* Valida Conta Existente */
+"- Nome da conta já existe" = "- Bill name already exists";
+
+/* Titulo Nova Conta */
+"Adicionar uma nova conta" = "Add a new bill";
+
+/* Titulo Alterar */
+"Alterar Conta" = "Update Bill";
+
+/* Atenção */
+"Atenção" = "Attention";
+
+/* Conta */
+"Conta" = "Bill";
+
+/* Alert Cancelado */
+"Conta cancelada com Sucesso!" = "Bill canceled with Success!";
+
+/* Alert Pago */
+"Conta paga com Sucesso!" = "Bill paid Successfully!";
+
+/* Texto da Notificação */
+"Conta %@ está perto do seu vencimento" = "Bill %@ is near its due date";
+
+/* Contas Padrões */
+"Contas Padrões" = "Default Bills";
+
+/* Confirm Exclusao */
+"Deseja realmente excluir a conta %@? " = "Do you really want to delete the bill %@? ";
+
+/* Erro */
+"Erro" = "Error";
+
+/* Fechar */
+"Fechar" = "Close";
+
+/* Titulo Alert */
+"Lembrete" = "Reminder";
+
+/* Header Table View */
+"MINHAS CONTAS" = "My Bills";
+
+/* Não */
+"Não" = "No";
+
+/* Não Informado */
+"Não Informado" = "Uninformed";
+
+/* Outros */
+"Outros" = "Other";
+
+/* Remover */
+"Remover" = "Remove";
+
+/* Selecione */
+"Selecione" = "Select";
+
+/* Sim */
+"Sim" = "Yes";
+
+/* Alert Sucesso */
+"Sucesso" = "Success";
+
+/* Água */
+"Água" = "Water";
+
+/* Energia */
+"Energia" = "Energy";
+
+/* Telefone */
+"Telefone" = "Phone";
+
+/* Celular */
+"Celular" = "Cellular";
+
+/* Condomínio */
+"Condomínio" = "Condominium";
+
+/* Tv por Assinatura */
+"TV por Assinatura" = "Cable TV";
+
+/* Aluguel */
+"Aluguel" = "Rent";
+
+/* Cartão de crédito */
+"Cartão de Crédito" = "Credit Card";
+
+/* Gás */
+"Gás" = "Gas";
+
+/* Lembrar No Dia */
+"Lembrar No dia ás %@" = "Remember on the same day at %@";
+
+/* Lembrar outros dia */
+"Lembrar %@ dia antes ás %@" = "Remember %@ day before at %@";
+
+/* Lembrar outros dias */
+"Lembrar %@ dias antes ás %@" = "Remember %@ days before at %@";
+
+/* Lembrar Desativado */
+"Lembrar Desativado" = "Remember Off";
+
+/* Vence em */
+"Vence em %@" = "Due %@";
+
+/* Confirm cancelar pagamento */
+"Deseja cancelar o pagamento desta Conta?" = "Cancel the payment for this bill?";
+
+/* Confirm pagamento */
+"A conta realmente foi paga?" = "The bill was actually paid?";
+
+/* Lembretes em Dias */
+"No dia (Mensal)" = "On Day (Monthly)";
+"1 Dia Antes" = "1 Day before";
+"2 Dias Antes" = "2 Days before";
+"3 Dias Antes" = "3 Days before";
+"4 Dias Antes" = "4 Days before";
+"5 Dias Antes" = "5 Days before";
+"Desativado" = "Off";
+
+

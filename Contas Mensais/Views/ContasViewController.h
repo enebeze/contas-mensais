@@ -7,31 +7,26 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "GAI.h"
-#import "GAIFields.h"
-#import "GAIDictionaryBuilder.h"
 #import "Contas.h"
 #import "CellConta.h"
-#import "GADBannerView.h"
-#import "GADRequest.h"
+#import "GAITrackedViewController.h"
 
-@class GADBannerView, GADRequest;
+//@class GADBannerView, GADRequest;
 
-@interface ContasViewController : UIViewController<UIActionSheetDelegate, GADBannerViewDelegate> {
+@import GoogleMobileAds;
+
+@interface ContasViewController : GAITrackedViewController<UIActionSheetDelegate> {
     NSIndexPath * indexPathInEdit;
     Contas *contaEdit;
     CellConta *cellContaEdit;
 
 }
 
+@property (weak, nonatomic) IBOutlet GADBannerView *bannerView;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
 @property (weak, nonatomic) IBOutlet UIImageView *imgStart;
 
 - (IBAction)viewMenu:(id)sender;
-
-// Declarar um como uma variável da instância
-@property(strong, nonatomic) GADBannerView *adBanner;
-
 - (GADRequest *)createRequest;
 
 @end

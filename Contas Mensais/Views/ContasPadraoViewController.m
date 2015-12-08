@@ -32,9 +32,11 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     [super viewDidAppear:animated];
-    
+}
+
+-(void) setAnalyticsGoogle
+{
     id tracker = [[GAI sharedInstance] defaultTracker];
-    
     [tracker set:kGAIScreenName value: @"Contas Padrao Screen"];
     [tracker send:[[GAIDictionaryBuilder createAppView] build]];
 }
@@ -49,6 +51,9 @@
     UITapGestureRecognizer *tgr = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(dismissKeyboard)];
     [tgr setCancelsTouchesInView:NO];
     [self.tableView addGestureRecognizer:tgr];
+    
+    // Informa dados para google analytics
+    [self setAnalyticsGoogle];
 }
 
 - (void)dismissKeyboard
@@ -101,10 +106,6 @@
     else {
         UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellPadrao" forIndexPath:indexPath];
         
-        // Adiciona a imagem
-        //UIImageView *imgView = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 20, 20)];
-        //imgView.image = [UIImage imageNamed:[_imagesContas objectAtIndex:indexPath.row]];
-        //cell.imageView.image = imgView.image;
         // Adiciona a descrição
         cell.textLabel.text = [_contasPadroes objectAtIndex:indexPath.row];
         
@@ -139,7 +140,8 @@
 - (BOOL)textFieldShouldReturn:(UITextField *)textField
 {
     // Chama o método que seleciona a conta passando o texto digitado
-    [(ManterContaViewController*)_delegate selecionaConta:textField.text];
+    //[(ManterContaViewController*)_delegate selecionaConta:textField.text];
+    [_delegate selecionaConta:textField.text];
     return  YES;
 }
 

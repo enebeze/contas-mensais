@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4978FC361C166AA300380437 /* GoogleMobileAds.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49D945161AB9E16D003AC9B7 /* GoogleMobileAds.framework */; };
+		4978FC371C166AA300380437 /* libGoogleAnalyticsServices.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4903BF401ABA77160001D43F /* libGoogleAnalyticsServices.a */; };
+		49D945191ABA4499003AC9B7 /* CoreTelephony.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49D945181ABA4499003AC9B7 /* CoreTelephony.framework */; };
+		49D9451B1ABA44A5003AC9B7 /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49D9451A1ABA44A5003AC9B7 /* EventKit.framework */; };
+		49D9451D1ABA44AF003AC9B7 /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49D9451C1ABA44AF003AC9B7 /* EventKitUI.framework */; };
+		49D9451F1ABA44C1003AC9B7 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49D9451E1ABA44C1003AC9B7 /* StoreKit.framework */; };
 		49EF706E1AB11AD3001F887E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EF706D1AB11AD3001F887E /* main.m */; };
 		49EF70711AB11AD3001F887E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EF70701AB11AD3001F887E /* AppDelegate.m */; };
 		49EF70741AB11AD3001F887E /* Contas_Mensais.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 49EF70721AB11AD3001F887E /* Contas_Mensais.xcdatamodeld */; };
@@ -15,6 +21,36 @@
 		49EF707C1AB11AD3001F887E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 49EF707B1AB11AD3001F887E /* Images.xcassets */; };
 		49EF707F1AB11AD3001F887E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49EF707D1AB11AD3001F887E /* LaunchScreen.xib */; };
 		49EF708B1AB11AD3001F887E /* Contas_MensaisTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EF708A1AB11AD3001F887E /* Contas_MensaisTests.m */; };
+		49EF70B31AB11D49001F887E /* ContasPadraoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EF70961AB11D49001F887E /* ContasPadraoViewController.m */; };
+		49EF70B41AB11D49001F887E /* ContasViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EF70981AB11D49001F887E /* ContasViewController.m */; };
+		49EF70B51AB11D49001F887E /* ManterContaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EF709A1AB11D49001F887E /* ManterContaViewController.m */; };
+		49EF70B61AB11D49001F887E /* Contas.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EF709D1AB11D49001F887E /* Contas.m */; };
+		49EF70B71AB11D49001F887E /* Pagamentos.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EF709F1AB11D49001F887E /* Pagamentos.m */; };
+		49EF70B81AB11D49001F887E /* checkbox-checked.png in Resources */ = {isa = PBXBuildFile; fileRef = 49EF70A31AB11D49001F887E /* checkbox-checked.png */; };
+		49EF70B91AB11D49001F887E /* checkbox-checked@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49EF70A41AB11D49001F887E /* checkbox-checked@2x.png */; };
+		49EF70BA1AB11D49001F887E /* checkbox-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 49EF70A51AB11D49001F887E /* checkbox-normal.png */; };
+		49EF70BB1AB11D49001F887E /* checkbox-normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49EF70A61AB11D49001F887E /* checkbox-normal@2x.png */; };
+		49EF70BC1AB11D49001F887E /* option-normal.png in Resources */ = {isa = PBXBuildFile; fileRef = 49EF70A71AB11D49001F887E /* option-normal.png */; };
+		49EF70BD1AB11D49001F887E /* option-normal@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49EF70A81AB11D49001F887E /* option-normal@2x.png */; };
+		49EF70BE1AB11D49001F887E /* option-selected.png in Resources */ = {isa = PBXBuildFile; fileRef = 49EF70A91AB11D49001F887E /* option-selected.png */; };
+		49EF70BF1AB11D49001F887E /* option-selected@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49EF70AA1AB11D49001F887E /* option-selected@2x.png */; };
+		49EF70C01AB11D49001F887E /* UICheckboxButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EF70AC1AB11D49001F887E /* UICheckboxButton.m */; };
+		49EF70C11AB11D49001F887E /* UIGroupCheckboxView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EF70AE1AB11D49001F887E /* UIGroupCheckboxView.m */; };
+		49EF70C21AB11D49001F887E /* CellConta.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EF70B11AB11D49001F887E /* CellConta.m */; };
+		49EF70CD1AB11D9E001F887E /* Contas Mensais-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49EF70C31AB11D9E001F887E /* Contas Mensais-Info.plist */; };
+		49EF70CE1AB11D9E001F887E /* LembreMeList.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49EF70C51AB11D9E001F887E /* LembreMeList.plist */; };
+		49EF70CF1AB11D9E001F887E /* ContasMensais.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 49EF70C61AB11D9E001F887E /* ContasMensais.xcdatamodeld */; };
+		49EF70FA1AB12997001F887E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49EF70F91AB12997001F887E /* UIKit.framework */; };
+		49EF70FD1AB12A1C001F887E /* Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 49EF70FB1AB12A1C001F887E /* Util.m */; };
+		49EF71051AB12CB3001F887E /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 49EF71041AB12CB3001F887E /* libz.dylib */; };
+		49EF71151AB131D9001F887E /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 49EF71171AB131D9001F887E /* Localizable.strings */; };
+		49EF71331AB1D98F001F887E /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49EF71321AB1D98F001F887E /* AdSupport.framework */; };
+		49EF71351AB1D99E001F887E /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49EF71341AB1D99E001F887E /* SystemConfiguration.framework */; };
+		49EF71371AB1DA8C001F887E /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49EF71361AB1DA8B001F887E /* AudioToolbox.framework */; };
+		49EF71391AB1DA96001F887E /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49EF71381AB1DA96001F887E /* AVFoundation.framework */; };
+		49EF713B1AB1DAA2001F887E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49EF713A1AB1DAA2001F887E /* CoreGraphics.framework */; };
+		49EF713D1AB1DAC8001F887E /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49EF713C1AB1DAC8001F887E /* MessageUI.framework */; };
+		49EF71411AB1DAFF001F887E /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 49EF71401AB1DAFF001F887E /* CoreData.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -28,7 +64,21 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		49EF70681AB11AD3001F887E /* Contas Mensais.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Contas Mensais.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4903BF3A1ABA76F90001D43F /* GAI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAI.h; sourceTree = "<group>"; };
+		4903BF3B1ABA76F90001D43F /* GAIDictionaryBuilder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIDictionaryBuilder.h; sourceTree = "<group>"; };
+		4903BF3C1ABA76F90001D43F /* GAIFields.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAIFields.h; sourceTree = "<group>"; };
+		4903BF3D1ABA76F90001D43F /* GAILogger.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAILogger.h; sourceTree = "<group>"; };
+		4903BF3E1ABA76F90001D43F /* GAITrackedViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITrackedViewController.h; sourceTree = "<group>"; };
+		4903BF3F1ABA76F90001D43F /* GAITracker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GAITracker.h; sourceTree = "<group>"; };
+		4903BF401ABA77160001D43F /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = libGoogleAnalyticsServices.a; sourceTree = "<group>"; };
+		4952DCBC1ABA70A800E29599 /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Main.strings; sourceTree = "<group>"; };
+		4952DCBE1ABA70B500E29599 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Main.strings; sourceTree = "<group>"; };
+		49D945161AB9E16D003AC9B7 /* GoogleMobileAds.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = GoogleMobileAds.framework; sourceTree = "<group>"; };
+		49D945181ABA4499003AC9B7 /* CoreTelephony.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreTelephony.framework; path = System/Library/Frameworks/CoreTelephony.framework; sourceTree = SDKROOT; };
+		49D9451A1ABA44A5003AC9B7 /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		49D9451C1ABA44AF003AC9B7 /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
+		49D9451E1ABA44C1003AC9B7 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		49EF70681AB11AD3001F887E /* contas-mensais.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "contas-mensais.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49EF706C1AB11AD3001F887E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49EF706D1AB11AD3001F887E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		49EF706F1AB11AD3001F887E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -42,6 +92,53 @@
 		49EF70841AB11AD3001F887E /* Contas MensaisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Contas MensaisTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		49EF70891AB11AD3001F887E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		49EF708A1AB11AD3001F887E /* Contas_MensaisTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Contas_MensaisTests.m; sourceTree = "<group>"; };
+		49EF70951AB11D49001F887E /* ContasPadraoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContasPadraoViewController.h; sourceTree = "<group>"; };
+		49EF70961AB11D49001F887E /* ContasPadraoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContasPadraoViewController.m; sourceTree = "<group>"; };
+		49EF70971AB11D49001F887E /* ContasViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ContasViewController.h; sourceTree = "<group>"; };
+		49EF70981AB11D49001F887E /* ContasViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ContasViewController.m; sourceTree = "<group>"; };
+		49EF70991AB11D49001F887E /* ManterContaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ManterContaViewController.h; sourceTree = "<group>"; };
+		49EF709A1AB11D49001F887E /* ManterContaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ManterContaViewController.m; sourceTree = "<group>"; };
+		49EF709C1AB11D49001F887E /* Contas.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Contas.h; sourceTree = "<group>"; };
+		49EF709D1AB11D49001F887E /* Contas.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Contas.m; sourceTree = "<group>"; };
+		49EF709E1AB11D49001F887E /* Pagamentos.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Pagamentos.h; sourceTree = "<group>"; };
+		49EF709F1AB11D49001F887E /* Pagamentos.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Pagamentos.m; sourceTree = "<group>"; };
+		49EF70A31AB11D49001F887E /* checkbox-checked.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkbox-checked.png"; sourceTree = "<group>"; };
+		49EF70A41AB11D49001F887E /* checkbox-checked@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkbox-checked@2x.png"; sourceTree = "<group>"; };
+		49EF70A51AB11D49001F887E /* checkbox-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkbox-normal.png"; sourceTree = "<group>"; };
+		49EF70A61AB11D49001F887E /* checkbox-normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "checkbox-normal@2x.png"; sourceTree = "<group>"; };
+		49EF70A71AB11D49001F887E /* option-normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "option-normal.png"; sourceTree = "<group>"; };
+		49EF70A81AB11D49001F887E /* option-normal@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "option-normal@2x.png"; sourceTree = "<group>"; };
+		49EF70A91AB11D49001F887E /* option-selected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "option-selected.png"; sourceTree = "<group>"; };
+		49EF70AA1AB11D49001F887E /* option-selected@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "option-selected@2x.png"; sourceTree = "<group>"; };
+		49EF70AB1AB11D49001F887E /* UICheckboxButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICheckboxButton.h; sourceTree = "<group>"; };
+		49EF70AC1AB11D49001F887E /* UICheckboxButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UICheckboxButton.m; sourceTree = "<group>"; };
+		49EF70AD1AB11D49001F887E /* UIGroupCheckboxView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIGroupCheckboxView.h; sourceTree = "<group>"; };
+		49EF70AE1AB11D49001F887E /* UIGroupCheckboxView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIGroupCheckboxView.m; sourceTree = "<group>"; };
+		49EF70B01AB11D49001F887E /* CellConta.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CellConta.h; sourceTree = "<group>"; };
+		49EF70B11AB11D49001F887E /* CellConta.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CellConta.m; sourceTree = "<group>"; };
+		49EF70C31AB11D9E001F887E /* Contas Mensais-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "Contas Mensais-Info.plist"; path = "Supporting Files/Contas Mensais-Info.plist"; sourceTree = "<group>"; };
+		49EF70C41AB11D9E001F887E /* Contas Mensais-Bridging-Header.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Contas Mensais-Bridging-Header.h"; path = "Supporting Files/Contas Mensais-Bridging-Header.h"; sourceTree = "<group>"; };
+		49EF70C51AB11D9E001F887E /* LembreMeList.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = LembreMeList.plist; path = "Supporting Files/LembreMeList.plist"; sourceTree = "<group>"; };
+		49EF70C71AB11D9E001F887E /* ContasMensais 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "ContasMensais 2.xcdatamodel"; sourceTree = "<group>"; };
+		49EF70C81AB11D9E001F887E /* ContasMensais 3.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "ContasMensais 3.xcdatamodel"; sourceTree = "<group>"; };
+		49EF70C91AB11D9E001F887E /* ContasMensais 4.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "ContasMensais 4.xcdatamodel"; sourceTree = "<group>"; };
+		49EF70CA1AB11D9E001F887E /* ContasMensais 5.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "ContasMensais 5.xcdatamodel"; sourceTree = "<group>"; };
+		49EF70CB1AB11D9E001F887E /* ContasMensais.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = ContasMensais.xcdatamodel; sourceTree = "<group>"; };
+		49EF70CC1AB11D9E001F887E /* Contas Mensais-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "Contas Mensais-Prefix.pch"; path = "Supporting Files/Contas Mensais-Prefix.pch"; sourceTree = "<group>"; };
+		49EF70F91AB12997001F887E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		49EF70FB1AB12A1C001F887E /* Util.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Util.m; sourceTree = "<group>"; };
+		49EF70FC1AB12A1C001F887E /* Util.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Util.h; sourceTree = "<group>"; };
+		49EF71041AB12CB3001F887E /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		49EF71121AB12FFD001F887E /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		49EF71161AB131D9001F887E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		49EF71181AB131DD001F887E /* pt */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = pt; path = pt.lproj/Localizable.strings; sourceTree = "<group>"; };
+		49EF71321AB1D98F001F887E /* AdSupport.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AdSupport.framework; path = System/Library/Frameworks/AdSupport.framework; sourceTree = SDKROOT; };
+		49EF71341AB1D99E001F887E /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		49EF71361AB1DA8B001F887E /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		49EF71381AB1DA96001F887E /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		49EF713A1AB1DAA2001F887E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		49EF713C1AB1DAC8001F887E /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		49EF71401AB1DAFF001F887E /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -49,6 +146,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49D9451F1ABA44C1003AC9B7 /* StoreKit.framework in Frameworks */,
+				49D9451D1ABA44AF003AC9B7 /* EventKitUI.framework in Frameworks */,
+				49D9451B1ABA44A5003AC9B7 /* EventKit.framework in Frameworks */,
+				4978FC361C166AA300380437 /* GoogleMobileAds.framework in Frameworks */,
+				4978FC371C166AA300380437 /* libGoogleAnalyticsServices.a in Frameworks */,
+				49D945191ABA4499003AC9B7 /* CoreTelephony.framework in Frameworks */,
+				49EF71411AB1DAFF001F887E /* CoreData.framework in Frameworks */,
+				49EF71351AB1D99E001F887E /* SystemConfiguration.framework in Frameworks */,
+				49EF713D1AB1DAC8001F887E /* MessageUI.framework in Frameworks */,
+				49EF713B1AB1DAA2001F887E /* CoreGraphics.framework in Frameworks */,
+				49EF71391AB1DA96001F887E /* AVFoundation.framework in Frameworks */,
+				49EF71371AB1DA8C001F887E /* AudioToolbox.framework in Frameworks */,
+				49EF71331AB1D98F001F887E /* AdSupport.framework in Frameworks */,
+				49EF71051AB12CB3001F887E /* libz.dylib in Frameworks */,
+				49EF70FA1AB12997001F887E /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -62,10 +174,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4903BF391ABA76F90001D43F /* GoogleAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				4903BF3A1ABA76F90001D43F /* GAI.h */,
+				4903BF3B1ABA76F90001D43F /* GAIDictionaryBuilder.h */,
+				4903BF3C1ABA76F90001D43F /* GAIFields.h */,
+				4903BF3D1ABA76F90001D43F /* GAILogger.h */,
+				4903BF3E1ABA76F90001D43F /* GAITrackedViewController.h */,
+				4903BF3F1ABA76F90001D43F /* GAITracker.h */,
+			);
+			path = GoogleAnalytics;
+			sourceTree = "<group>";
+		};
 		49EF705F1AB11AD3001F887E = {
 			isa = PBXGroup;
 			children = (
 				49EF706A1AB11AD3001F887E /* Contas Mensais */,
+				49EF71061AB12CD0001F887E /* Framework */,
 				49EF70871AB11AD3001F887E /* Contas MensaisTests */,
 				49EF70691AB11AD3001F887E /* Products */,
 			);
@@ -74,7 +200,7 @@
 		49EF70691AB11AD3001F887E /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				49EF70681AB11AD3001F887E /* Contas Mensais.app */,
+				49EF70681AB11AD3001F887E /* contas-mensais.app */,
 				49EF70841AB11AD3001F887E /* Contas MensaisTests.xctest */,
 			);
 			name = Products;
@@ -83,6 +209,11 @@
 		49EF706A1AB11AD3001F887E /* Contas Mensais */ = {
 			isa = PBXGroup;
 			children = (
+				4903BF391ABA76F90001D43F /* GoogleAnalytics */,
+				49EF70941AB11D49001F887E /* Views */,
+				49EF709B1AB11D49001F887E /* Entities */,
+				49EF70A01AB11D49001F887E /* Controllers */,
+				49EF70B21AB11D49001F887E /* Util */,
 				49EF706F1AB11AD3001F887E /* AppDelegate.h */,
 				49EF70701AB11AD3001F887E /* AppDelegate.m */,
 				49EF70751AB11AD3001F887E /* ViewController.h */,
@@ -99,8 +230,14 @@
 		49EF706B1AB11AD3001F887E /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				49EF70C31AB11D9E001F887E /* Contas Mensais-Info.plist */,
+				49EF70C41AB11D9E001F887E /* Contas Mensais-Bridging-Header.h */,
+				49EF70C51AB11D9E001F887E /* LembreMeList.plist */,
+				49EF70C61AB11D9E001F887E /* ContasMensais.xcdatamodeld */,
+				49EF70CC1AB11D9E001F887E /* Contas Mensais-Prefix.pch */,
 				49EF706C1AB11AD3001F887E /* Info.plist */,
 				49EF706D1AB11AD3001F887E /* main.m */,
+				49EF71171AB131D9001F887E /* Localizable.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -122,6 +259,106 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		49EF70941AB11D49001F887E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				49EF70971AB11D49001F887E /* ContasViewController.h */,
+				49EF70981AB11D49001F887E /* ContasViewController.m */,
+				49EF70991AB11D49001F887E /* ManterContaViewController.h */,
+				49EF709A1AB11D49001F887E /* ManterContaViewController.m */,
+				49EF70951AB11D49001F887E /* ContasPadraoViewController.h */,
+				49EF70961AB11D49001F887E /* ContasPadraoViewController.m */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		49EF709B1AB11D49001F887E /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				49EF709C1AB11D49001F887E /* Contas.h */,
+				49EF709D1AB11D49001F887E /* Contas.m */,
+				49EF709E1AB11D49001F887E /* Pagamentos.h */,
+				49EF709F1AB11D49001F887E /* Pagamentos.m */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		49EF70A01AB11D49001F887E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				49EF70A11AB11D49001F887E /* UICheckboxButton */,
+				49EF70AF1AB11D49001F887E /* UIViewCell */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		49EF70A11AB11D49001F887E /* UICheckboxButton */ = {
+			isa = PBXGroup;
+			children = (
+				49EF70A21AB11D49001F887E /* Images */,
+				49EF70AB1AB11D49001F887E /* UICheckboxButton.h */,
+				49EF70AC1AB11D49001F887E /* UICheckboxButton.m */,
+				49EF70AD1AB11D49001F887E /* UIGroupCheckboxView.h */,
+				49EF70AE1AB11D49001F887E /* UIGroupCheckboxView.m */,
+			);
+			path = UICheckboxButton;
+			sourceTree = "<group>";
+		};
+		49EF70A21AB11D49001F887E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				49EF70A31AB11D49001F887E /* checkbox-checked.png */,
+				49EF70A41AB11D49001F887E /* checkbox-checked@2x.png */,
+				49EF70A51AB11D49001F887E /* checkbox-normal.png */,
+				49EF70A61AB11D49001F887E /* checkbox-normal@2x.png */,
+				49EF70A71AB11D49001F887E /* option-normal.png */,
+				49EF70A81AB11D49001F887E /* option-normal@2x.png */,
+				49EF70A91AB11D49001F887E /* option-selected.png */,
+				49EF70AA1AB11D49001F887E /* option-selected@2x.png */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		49EF70AF1AB11D49001F887E /* UIViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				49EF70B01AB11D49001F887E /* CellConta.h */,
+				49EF70B11AB11D49001F887E /* CellConta.m */,
+			);
+			path = UIViewCell;
+			sourceTree = "<group>";
+		};
+		49EF70B21AB11D49001F887E /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				49EF70FB1AB12A1C001F887E /* Util.m */,
+				49EF70FC1AB12A1C001F887E /* Util.h */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		49EF71061AB12CD0001F887E /* Framework */ = {
+			isa = PBXGroup;
+			children = (
+				4903BF401ABA77160001D43F /* libGoogleAnalyticsServices.a */,
+				49D9451E1ABA44C1003AC9B7 /* StoreKit.framework */,
+				49D9451C1ABA44AF003AC9B7 /* EventKitUI.framework */,
+				49D9451A1ABA44A5003AC9B7 /* EventKit.framework */,
+				49D945181ABA4499003AC9B7 /* CoreTelephony.framework */,
+				49D945161AB9E16D003AC9B7 /* GoogleMobileAds.framework */,
+				49EF71401AB1DAFF001F887E /* CoreData.framework */,
+				49EF713C1AB1DAC8001F887E /* MessageUI.framework */,
+				49EF713A1AB1DAA2001F887E /* CoreGraphics.framework */,
+				49EF71381AB1DA96001F887E /* AVFoundation.framework */,
+				49EF71361AB1DA8B001F887E /* AudioToolbox.framework */,
+				49EF71341AB1D99E001F887E /* SystemConfiguration.framework */,
+				49EF71321AB1D98F001F887E /* AdSupport.framework */,
+				49EF71041AB12CB3001F887E /* libz.dylib */,
+				49EF70F91AB12997001F887E /* UIKit.framework */,
+			);
+			name = Framework;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,7 +376,7 @@
 			);
 			name = "Contas Mensais";
 			productName = "Contas Mensais";
-			productReference = 49EF70681AB11AD3001F887E /* Contas Mensais.app */;
+			productReference = 49EF70681AB11AD3001F887E /* contas-mensais.app */;
 			productType = "com.apple.product-type.application";
 		};
 		49EF70831AB11AD3001F887E /* Contas MensaisTests */ = {
@@ -166,14 +403,21 @@
 		49EF70601AB11AD3001F887E /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Ebenezer Silva";
 				TargetAttributes = {
 					49EF70671AB11AD3001F887E = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = Y4F4SUWX3K;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 0;
+							};
+						};
 					};
 					49EF70831AB11AD3001F887E = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = Y4F4SUWX3K;
 						TestTargetID = 49EF70671AB11AD3001F887E;
 					};
 				};
@@ -185,6 +429,7 @@
 			knownRegions = (
 				en,
 				Base,
+				pt,
 			);
 			mainGroup = 49EF705F1AB11AD3001F887E;
 			productRefGroup = 49EF70691AB11AD3001F887E /* Products */;
@@ -203,7 +448,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				49EF707A1AB11AD3001F887E /* Main.storyboard in Resources */,
+				49EF70BD1AB11D49001F887E /* option-normal@2x.png in Resources */,
 				49EF707F1AB11AD3001F887E /* LaunchScreen.xib in Resources */,
+				49EF71151AB131D9001F887E /* Localizable.strings in Resources */,
+				49EF70BB1AB11D49001F887E /* checkbox-normal@2x.png in Resources */,
+				49EF70BC1AB11D49001F887E /* option-normal.png in Resources */,
+				49EF70CE1AB11D9E001F887E /* LembreMeList.plist in Resources */,
+				49EF70BE1AB11D49001F887E /* option-selected.png in Resources */,
+				49EF70BF1AB11D49001F887E /* option-selected@2x.png in Resources */,
+				49EF70B91AB11D49001F887E /* checkbox-checked@2x.png in Resources */,
+				49EF70CD1AB11D9E001F887E /* Contas Mensais-Info.plist in Resources */,
+				49EF70BA1AB11D49001F887E /* checkbox-normal.png in Resources */,
+				49EF70B81AB11D49001F887E /* checkbox-checked.png in Resources */,
 				49EF707C1AB11AD3001F887E /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -222,10 +478,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49EF70C01AB11D49001F887E /* UICheckboxButton.m in Sources */,
 				49EF70741AB11AD3001F887E /* Contas_Mensais.xcdatamodeld in Sources */,
+				49EF70CF1AB11D9E001F887E /* ContasMensais.xcdatamodeld in Sources */,
 				49EF70711AB11AD3001F887E /* AppDelegate.m in Sources */,
+				49EF70C21AB11D49001F887E /* CellConta.m in Sources */,
+				49EF70FD1AB12A1C001F887E /* Util.m in Sources */,
+				49EF70B41AB11D49001F887E /* ContasViewController.m in Sources */,
+				49EF70B61AB11D49001F887E /* Contas.m in Sources */,
+				49EF70B51AB11D49001F887E /* ManterContaViewController.m in Sources */,
 				49EF70771AB11AD3001F887E /* ViewController.m in Sources */,
 				49EF706E1AB11AD3001F887E /* main.m in Sources */,
+				49EF70C11AB11D49001F887E /* UIGroupCheckboxView.m in Sources */,
+				49EF70B71AB11D49001F887E /* Pagamentos.m in Sources */,
+				49EF70B31AB11D49001F887E /* ContasPadraoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,6 +518,8 @@
 			isa = PBXVariantGroup;
 			children = (
 				49EF70791AB11AD3001F887E /* Base */,
+				4952DCBC1ABA70A800E29599 /* pt */,
+				4952DCBE1ABA70B500E29599 /* en */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -260,8 +528,19 @@
 			isa = PBXVariantGroup;
 			children = (
 				49EF707E1AB11AD3001F887E /* Base */,
+				49EF71121AB12FFD001F887E /* pt */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		49EF71171AB131D9001F887E /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49EF71161AB131D9001F887E /* en */,
+				49EF71181AB131DD001F887E /* pt */,
+			);
+			name = Localizable.strings;
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -284,9 +563,11 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ebenezer Souza (ZGGLYZJJ38)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ebenezer Souza (ZGGLYZJJ38)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -304,6 +585,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_LDFLAGS = "";
+				PROVISIONING_PROFILE = "afa49476-9a1c-4e46-9a23-121407a3ea18";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -326,7 +609,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Ebenezer Souza (ZGGLYZJJ38)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Ebenezer Souza (ZGGLYZJJ38)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -339,6 +623,8 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				PROVISIONING_PROFILE = "afa49476-9a1c-4e46-9a23-121407a3ea18";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -349,9 +635,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Contas Mensais/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ebenezersilva.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "contas-mensais";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -359,9 +659,23 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "Contas Mensais/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				OTHER_LDFLAGS = "";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ebenezersilva.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "contas-mensais";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -369,6 +683,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -379,8 +695,9 @@
 				);
 				INFOPLIST_FILE = "Contas MensaisTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ebenezersilva.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Contas Mensais.app/Contas Mensais";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -388,14 +705,17 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = "Contas MensaisTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ebenezersilva.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Contas Mensais.app/Contas Mensais";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -409,7 +729,7 @@
 				49EF708D1AB11AD3001F887E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		49EF708E1AB11AD3001F887E /* Build configuration list for PBXNativeTarget "Contas Mensais" */ = {
 			isa = XCConfigurationList;
@@ -418,6 +738,7 @@
 				49EF70901AB11AD3001F887E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 		49EF70911AB11AD3001F887E /* Build configuration list for PBXNativeTarget "Contas MensaisTests" */ = {
 			isa = XCConfigurationList;
@@ -426,6 +747,7 @@
 				49EF70931AB11AD3001F887E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 
@@ -437,6 +759,21 @@
 			);
 			currentVersion = 49EF70731AB11AD3001F887E /* Contas_Mensais.xcdatamodel */;
 			path = Contas_Mensais.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+		49EF70C61AB11D9E001F887E /* ContasMensais.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				49EF70C71AB11D9E001F887E /* ContasMensais 2.xcdatamodel */,
+				49EF70C81AB11D9E001F887E /* ContasMensais 3.xcdatamodel */,
+				49EF70C91AB11D9E001F887E /* ContasMensais 4.xcdatamodel */,
+				49EF70CA1AB11D9E001F887E /* ContasMensais 5.xcdatamodel */,
+				49EF70CB1AB11D9E001F887E /* ContasMensais.xcdatamodel */,
+			);
+			currentVersion = 49EF70CA1AB11D9E001F887E /* ContasMensais 5.xcdatamodel */;
+			name = ContasMensais.xcdatamodeld;
+			path = "Supporting Files/ContasMensais.xcdatamodeld";
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
