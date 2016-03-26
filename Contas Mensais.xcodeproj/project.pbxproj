@@ -649,7 +649,7 @@
 					"$(PROJECT_DIR)",
 				);
 				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ebenezersilva.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ebenezersilva.contas-mensais2";
 				PRODUCT_NAME = "contas-mensais";
 				PROVISIONING_PROFILE = "";
 			};
@@ -673,7 +673,7 @@
 					"$(PROJECT_DIR)",
 				);
 				OTHER_LDFLAGS = "";
-				PRODUCT_BUNDLE_IDENTIFIER = "com.ebenezersilva.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.ebenezersilva.contas-mensais2";
 				PRODUCT_NAME = "contas-mensais";
 				PROVISIONING_PROFILE = "";
 			};

@@ -92,7 +92,7 @@
     GADRequest *request = [GADRequest request];
     
 //#ifdef DEBUG
-    request.testDevices = @[@"85092075a4fd48579c260d3d52e16385"];
+    request.testDevices = @[@"2c973e851f3e0009f4fde27ceff3b0ab"];
 //#endif
     
     return request;
